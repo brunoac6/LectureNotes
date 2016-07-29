@@ -1,0 +1,64 @@
+\chapter{Integrais Múltiplas}
+
+\section{Integrais Duplas sobre Retângulos}
+
+Se $f(x)$ é uma função de uma única variável real e é definida para $a \le x \le b$, subdividimos o intervalo $[a,b]$ em $n$ subintervalos $[x_{i-1},x_i]$ de comprimento igual a $\Delta x = (b-a)/n$ e escolhemos pontos arbitrários $x_i^{*}$ em cada um desses intervalos. Em seguida, formamos a soma de Riemann e tomamos o limite dessa soma quando $n \rightarrow \infty$ para oter a integral definida de $a$ até $b$ da função $f$
+
+\begin{equation}
+\lim_{n \rightarrow \infty} \sum_{i=1}^n f(x_i^*) \cdot \Delta x = \int_a^b f(x) dx
+\end{equation}
+
+\begin{figure}[!h]
+ \centering
+ \input{Pictures/im_001.tex}
+ \caption{Somas de Riemman para funções de uma variável}
+\end{figure}
+
+De modo semelhante, considere uma função $f$ de duas variáveis definida em um retângulo fechado.
+
+$$R = [a,b] \times [c,d] = \{ (x,y) \in \mathbb{R}^2 | a \le x \le b, c \le y \le d \} $$
+
+O gráfico de $f$ é a superfície com equação $z = f(x,y)$. Seja $S$ o sólido contido acima de $R$ e abaixo da superfície $z$:
+
+$$ S = \{ (x,y,z) \in  \mathbb{R}^3 | 0 \le z \le f(x,y), (x,y) \in R \} $$
+
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=10cm]{Pictures/graph2.jpg}
+\end{figure}
+
+Para determinar o volume de $S$, o primeiro passo é dividir o retângulo $R$ em sub-retângulos. Faremos isto dividindo o intervalo $[a,b]$ em $m$ subintervalos $[x_{i-1}, x_{i}]$ de mesmo comprimento $\delta x = (b-a)/m$ e o intervalo $[c,d]$ em $n$ subintervalos iguais $[y_{j-1}, y_{j}]$ de comprimento $\delta y = (d-c)/n$.
+
+\begin{figure}[!h]
+ \centering
+ \input{Pictures/im_003.tex}
+\end{figure}
+
+Se escolhermos um ponto arbitrário em cada $R_{ij}$, $(x_i^*, y_j^*)$ definimos o volume da caixa de base $R_{ij}$ e altura $f(x_i^*, y_j^*)$ como:
+
+$$ f(x_i^*, y_j^*) \cdot \Delta A $$
+
+Se realizarmos este procedimento para os demais retângulos, vamos obter uma estimativa do volume:
+
+$$ V \approx \sum_{i=1}^m \sum{j=1}^n f(x_i^*, y_j^*) \cdot \Delta A $$
+
+A aproximação do volume acima melhora quando aumentamos os valores de $m$ e $n$, portanto:
+
+$$ V = \lim_{m,n \rightarrow \infty} \sum_{i=1}^m \sum{j=1}^n f(x_i^*, y_j^*) \cdot \Delta A $$
+
+Daí, podemos enunciar a definição de integral dupla sobre um retângulo $R_{ij}$.
+
+\begin{definition}[Integral Dupla]
+ A integral dupla de $f$ sobre o retângulo $R_{ij}$ é:
+ \begin{equation}
+  \iint _{R} f(x,y) dA = \lim_{m,n \rightarrow \infty} \sum_{i=1}^m \sum{j=1}^n f(x_i^*, y_j^*) \cdot \Delta A
+ \end{equation}
+ se este limite existir.
+\end{definition}
+
+O significado preciso da definição anterior é que para todo $\epsilon > 0$, existe um número $N$ talque
+
+$$ \| \iint _{R} f(x,y) dA -  \lim_{m,n \rightarrow \infty} \sum_{i=1}^m \sum{j=1}^n f(x_i^*, y_j^*) \cdot \Delta A \| < \epsilon $$
+
+para todos inteiros $m$ e $n$ maiores que $N$ e para qualquer escolha de $(x_i^*, y_j^*)$ em $R_{ij}$.
+

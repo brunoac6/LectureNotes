@@ -1,0 +1,20 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {brazilian}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}N\IeC {\'u}meros Reais}{5}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Fun\IeC {\c c}\IeC {\~o}es e Modelos}{7}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Limites e Continuidade}{9}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Integrais M\IeC {\'u}ltiplas}{11}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Integrais Duplas sobre Ret\IeC {\^a}ngulos}{11}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{15}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{15}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{15}{section*.4}
+\contentsfinish 

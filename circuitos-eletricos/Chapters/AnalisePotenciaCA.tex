@@ -1,0 +1,106 @@
+\chapter{Análise da Potência CA}
+
+\section{Potência instantânea e potência média}
+
+A \textbf{potência instantânea}, $p(t)$, em watts, é a taxa na qual um elemento absorve energia. É a potência a qualquer instante.
+
+\begin{equation}
+ p(t) = v(t) \cdot i(t)
+\end{equation}
+
+Considerando $v(t) = V_m cos(\omega t + \theta_v)$ e $i(t) = I_m cos(\omega t + \theta_i)$ e aplicando uma identidade trigonométrica \footnote{$cos(A)cos(B) = \frac{1}{2}cos(A-B) + \frac{1}{2}cos(A+B)$}, podemos expressar a potência como:
+
+\begin{equation} \label{potinst}
+ p(t) = \frac{1}{2}V_m I_m \cos(\theta_v - \theta_i) + \cos(2 \omega t + \theta_v + \theta_i)
+\end{equation}
+
+\begin{tikzpicture}
+\begin{axis}[axis lines = left, xlabel = t (s), ylabel = V]
+\addplot[domain=0:360,samples=100,color=red]{sin(x)};
+\end{axis}
+\end{tikzpicture}
+
+A \textbf{potência média}, em watts, é a média da potência instantânea ao longo de um período.
+
+\begin{equation}
+ P = \frac{1}{2} \int_0^T p(t) dt
+\end{equation}
+
+Para a expressão na Equação \ref{potinst}, temos que:
+
+\begin{equation}
+ P = \frac{1}{2} V_m I_m cos(\theta_v - \theta_i)
+\end{equation}
+
+<demonstração>
+
+Note que $p(t)$ cvaria com o tempo, ao passo que $P$ não.
+
+As formas fasoriais de $v(t)$ e $i(t)$  são, respectivamente, $\mathbf{V} = V_m \angle \theta_v$ e $\mathbf{I} = I_m \angle \theta_i$. Para usar fasores, percebemos que:
+
+\begin{align}
+ \frac{1}{2} \mathbf{V}\mathbf{I^*} &= \frac{1}{2} = V_m I_m \angle \theta_v - \theta_i \\
+ &= \frac{1}{2} V_m I_m [\cos(\theta_v - \theta_i) + j \sin(\theta_v - \theta_i)]
+\end{align}
+
+Reconhecemos a parte real dessa expressão como a potência média, P.
+
+Em um circuito resistivo, $\theta_v = \theta_i$, então, $\cos(\theta_v - \theta_i) = 1$, nos dando
+
+\begin{equation}
+ P = \frac{1}{2} V_m I_m = \frac{1}{2} {I_m}^2 R
+\end{equation}
+
+Quando $\theta_v - \theta_i = +- 90^{\circ}$, temos que $\cos(\theta_v - \theta_i) = 0$. Então, em um circuito putamente reativo, a potência média é zero.
+
+<3 exemplos>
+
+\section{Transferência de Potência média Máxima}
+
+Considere o equivalente de Thévenin de um circuito:
+
+<figura>
+
+Na morma retangular, as impedâncias são:
+
+\begin{align}
+ Z_{Th} &= R_{Th} + j X_{Th} \\
+ Z_L &= R_L + j X_L
+\end{align}
+
+A corrente através da carga será:
+
+\begin{equation}
+ \mathbf{I} = \frac{\mathbf{V}_{Th}}{Z_{Th} + Z_L} = \frac{\mathbf{V}_{Th}}{(R_{Th} + R_L) + j (X_{Th} + X_L)}
+\end{equation}
+
+A potência média na carga então será
+
+\begin{equation} \label{potencia}
+ P = \frac{1}{2} |\mathbf{I}|^2 \cdot R_L = \frac{|\mathbf{V}_{Th}| R_L / 2}{(R_{Th} + R_L)^2 + (X_{Th} + X_L)^2}
+\end{equation}
+
+Tomando $\partial P / \partial R_L$ e $\partial P / \partial X_L$ e igualando ambas expressões a zero, vamos ter:
+
+%\begin{align}
+% X_L &= - X_{Th} \label \\
+% R_L &= \sqrt{{R_{Th}}^2 + (X_{Th} + X_L)^2}
+%\end{align}
+
+Combinando as Equações, conclui-se que para haver a máxima transferência,
+
+\begin{equation}
+ Z_L = {Z_{Th}}^{*}
+\end{equation}
+
+Fazendo $Z_L = {Z_{Th}}^{*}$ na Equação \eqref{potencia}, vamos obter a potência média máxima na carga:
+
+\begin{equation}
+ P_{\text{máx}} = \frac{|\mathbf{V}_{Th}|^2}{8 R_{Th}} 
+\end{equation}
+
+<exemplos>
+
+\section{Valor Eficaz ou RMS}
+
+\textbf{Valor eficaz} de uma corrente periódica é a corrente

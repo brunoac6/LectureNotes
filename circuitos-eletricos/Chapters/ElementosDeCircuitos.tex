@@ -1,0 +1,31 @@
+\chapter{Elementos de Circuitos}
+
+\section{Fontes de Tensão e de Corrente}
+
+Uma fonte elétrica é um dispositivo capaz de converter energia não elétrica em energia elétrica. Uma fonte ideal de tensão é um elemento de circuito que mantém uma tensão prescrita em seus terminais independentemente da corrente que flui sobre eles. Uma fonte ideal de corrente mantém uma corrente prescrita em seus terminais independentemente da tensão sobre eles.
+
+Uma fonte independente estabelece
+
+\section{Resistência Elétrica}
+
+\begin{definition}[Resistência]
+Resistência é a capacidade dos materiais de impedir o fluxo de corrente ou, mais especificamente, o fluxo de carga elétrica. O elemento de circuito usado para modelar esse comportamento é o \textbf{resistor}.
+ \begin{circuitikz} \draw
+  (0,0) to[R, l=$R$] (2,0); 
+ \end{circuitikz}
+\end{definition}
+
+Para fins de análise de circuitos, devemos referir à corrente no resistor à tensão terminal. A relção entre a tensão e a corrente em um resistor é:
+
+\begin{equation}
+ v = i R
+ \label{leiohm}
+\end{equation}
+
+Esta equação é conhecida como \textbf{Lei de Ohm}.
+
+\section{Leis de Kirchhoff}
+
+Diz-se que um circuito está resolvido quando a tensão nos terminais de cada elemento e a corrente correspondente foram determinadas.
+
+Circuitos são descritos por nós e caminhos fechados. Um \textbf{nó} é um ponto no qual dois ou mais elementos de circuito se unem.

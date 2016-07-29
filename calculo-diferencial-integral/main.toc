@@ -1,0 +1,38 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {brazilian}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}N\IeC {\'u}meros Reais}{5}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Fun\IeC {\c c}\IeC {\~o}es e Modelos}{7}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Limites e Continuidade}{9}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Integrais M\IeC {\'u}ltiplas}{11}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Integrais Duplas sobre Ret\IeC {\^a}ngulos}{11}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Integrais Iteradas}{13}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Integrais Duplas em Regi\IeC {\~o}es Gerais}{13}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Mudan\IeC {\c c}a de Vari\IeC {\'a}veis em Integrais Duplas}{14}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Integrais Duplas em Coordenadas Polares}{14}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Aplica\IeC {\c c}\IeC {\~o}es das Integrais Duplas}{14}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Integrais Triplas}{14}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Mudan\IeC {\c c}a de Vari\IeC {\'a}veis em Integrais Triplas}{14}{section.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.1}Coordenadas Cil\IeC {\'\i }ndricas}{14}{subsection.4.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.2}Coordenadas Esf\IeC {\'e}ricas}{14}{subsection.4.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{15}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{15}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{15}{section*.4}
+\contentsfinish 

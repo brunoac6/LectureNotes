@@ -1,0 +1,47 @@
+\chapter{Limites e Continuidade}
+
+Chama-se limite o comportamento de uma função $f(x)$ em torno de um valor $x$. Escrevemos
+$$lim_{x \rightarrow a} f(x) = L$$
+e dizemos "o limite de $f(x)$, quando $x$ tende a $a$ é igual a $L$" se pudermos tornar os valors de $f(x)$ arbitrariamente próximos de $L$ (tão próximos quanto quisermos), tornando $x$ suficientemente próximo de $a$ (por ambos os lados de $a$), mas não igual a $a$.
+
+\begin{example}
+Vamos investigar o comportamento de uma função $f$ definida por $f(x) = x^2 - x + 2$, para valores de $x$ próximos de 2.
+
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[
+    axis lines = left,
+    xlabel = $x$,
+    ylabel = {$f(x)$},
+]
+%Below the red parabola is defined
+\addplot [
+    domain=0:3, 
+    samples=100, 
+    color=green,
+]
+{x^2 - x + 2};
+\end{axis}
+\end{tikzpicture}
+
+\begin{table}
+\begin{tabular}{|c|c||c|c|}
+\hline
+$x$ & $f(x)$ & $x$ & $f(x)$ \\
+\hline 
+1 & 2,000000 & 3 & 8,000000 \\
+\hline
+1,5 & 2,750000 & 2,5 & 5,750000 \\
+\hline
+1,9 & 3,710000 & 2,1 & 4,310000 \\
+\hline
+1,95 & 3,852500 & 2,05 & 4,152500 \\
+\hline
+1,99 & 3,970100 & 2,01 & 4,030099 \\
+\hline
+1,999 & 3,997001 & 2,001 & 4,003000 \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{example}
+
